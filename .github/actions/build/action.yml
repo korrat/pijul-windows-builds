@@ -29,10 +29,10 @@ runs:
     - name: Build pijul
       shell: bash
       run: |
-        cargo install pijul --version ${{ inputs.version }} --root . --locked
+        cargo +stable-gnu install pijul --version ${{ inputs.version }} --root . --locked
         cp bin/pijul.exe pijul.exe
     - name: Build pijul-with-git
       shell: bash
       run: |
-        cargo install pijul --version ${{ inputs.version }} --root . --locked --features git
+        cargo +stable-gnu install pijul --version ${{ inputs.version }} --root . --locked --features git
         cp bin/pijul.exe pijul-with-git.exe
