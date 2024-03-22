@@ -4,7 +4,6 @@
   "dependencies": [
     "xxhash",
     "zstd",
-    "openssl",
-    "mingw-w64-x86_64-pkg-config"
+    "openssl"
   ]
 }
